@@ -1,0 +1,6 @@
+DATABASE_ENGINE = 'postgresql_psycopg2'
+DATABASE_NAME = 'wait_until_dark'
+DATABASE_USER = 'wait_until_dark'                   
+DATABASE_PASSWORD = ''                   
+DATABASE_HOST = ''                   
+DATABASE_PORT = ''
