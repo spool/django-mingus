@@ -1,5 +1,6 @@
 BeautifulSoup==3.0.8.1
 PIL
+psycopg2
 python-dateutil==1.4.1
 django==1.1.1
 django-debug-toolbar==0.8.1
