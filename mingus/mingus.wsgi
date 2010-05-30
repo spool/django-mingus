@@ -1,3 +1,6 @@
+import site
+site.addsitedir('/home/django/domains/waituntildarkfringe.com/waituntildarkfringe.com/lib/python2.6/site-packages')
+
 import os
 import sys
 
