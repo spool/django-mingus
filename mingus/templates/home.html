@@ -10,9 +10,6 @@
 {% endcomment %}
 
 {% block content %}
-<!--<img src="{{ STATIC_URL }}img/poster.jpg" />-->
-<!--<img src="{{ STATIC_URL }}img/title.png" />-->
-  <!--<img src="{{ STATIC_URL }}img/window2.jpg" />-->
   <div class="post_list">
     {% for object in object_list %}
     {% ifequal object.content_type.name "post" %}
