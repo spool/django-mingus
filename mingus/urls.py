@@ -70,11 +70,13 @@ urlpatterns += patterns('',
     url(r'^tags/(?P<slug>[-\w]+)/$', 'mingus.core.views.tag_detail',
             name='blog_tag_detail'),
 
-    url (r'^search/$',
+    url(r'^search/$',
         view=proxy_search,
         name='proxy_search'),
 
-    (r'', include('basic.blog.urls')),
+    #(r'', direct_to_template, {'template': 'home.html'}),
+
+    (r'^blog/', include('basic.blog.urls')),
 )
 
 

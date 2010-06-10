@@ -109,7 +109,7 @@ def springsteen_category(request, slug):
 
 
 @cache_page_with_prefix(60, page_key_prefix)
-def home_list(request, page=0, template_name='proxy/proxy_list.html', **kwargs):
+def home_list(request, page=0, template_name='home.html', **kwargs):
     '''
     Homepage.
 

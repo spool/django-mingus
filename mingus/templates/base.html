@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="{{ STATIC_URL }}css/pygments.css" type="text/css" media="all" charset="utf-8">
     <link rel="stylesheet" href="{{ STATIC_URL }}css/base.css" type="text/css" media="all" charset="utf-8">
     <link rel="stylesheet" href="{{ STATIC_URL }}css/themes/dark.css" type="text/css" media="all" charset="utf-8">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/custom.css" type="text/css" media="all" charset="utf-8">
    {% endcompress %}
 
    <!--[if IE 6]>
@@ -55,12 +56,16 @@
   <div id="body-container" class="clearfix">
     {% block body %}
 
+  {% block header %}
   <div id="header" class="clearfix">
+    {% block logo %}
     <div id="logo">
-      <h1><a href="/" title="{{ BLOG_SETTINGS.site_name }}">{{ BLOG_SETTINGS.site_name }}</a></h1>
+        <h1><a href="/" title="{{ BLOG_SETTINGS.site_name }}"><img src="/media/mingus/img/banner.png" alt="{{ BLOG_SETTINGS.site_name }}" /></a></h1>
     </div>
     <!-- /logo -->
+    {% endblock logo %}
 
+    {% block navhead %}
     <div id="nav">
       {% cache 3600 "base.navbars" %}
       {% navbars %}
@@ -68,12 +73,14 @@
       <form action="/search/" method="GET"><input type="text" name="q" value="{{ search_term }}"><input type="submit" class="button" value="{% trans "Search" %}"></form>
     </div>
     <!-- /nav -->
+    {% endblock navhead %}
 
   </div>
   <!-- /header -->
+  {% endblock header %}
 
       <div class="container_16">
-        <div class="grid_9 suffix_1">
+        <div class="grid_8 suffix_1">
           <div class="content">
             {% block content %}{% endblock %}
           </div>
@@ -82,7 +89,9 @@
         </div>
         <!-- /grid_9 -->
 
-        <div id="right-rail" class="grid_6">
+      {% block right_rail %}
+        {% comment %}
+        <div id="right-rail" class="grid_7">
 
           <h4>{% trans "About" %}</h4>
           <p>{{ BLOG_SETTINGS.about|safe }}</p>
@@ -179,10 +188,12 @@
           </ul>
           {% endif %}
           {% endcache %}
-          {% endcomment %}
+          <!--{% endcomment1 %}
 
         </div>
         <!-- /grid_6 -->
+        {% endcomment %}
+      {% endblock right_rail %}
       </div>
       <!-- /container_16 -->
 

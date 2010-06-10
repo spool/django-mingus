@@ -1,14 +1,18 @@
 {% extends "base.html" %}
 
-
 {% block title %}{{ block.super }}{% endblock %}
 {% block body_class %}{{ block.super }} post_list{% endblock %}
 
 {% block content_title %}{% endblock %}
 
+{% comment %}
+{% block header %}{% endblock %}
+{% endcomment %}
+
 {% block content %}
-  <img src="{{ STATIC_URL }}img/vertical_title.jpg" />
-  <img src="{{ STATIC_URL }}img/window.jpg" />
+<!--<img src="{{ STATIC_URL }}img/poster.jpg" />-->
+<!--<img src="{{ STATIC_URL }}img/title.png" />-->
+  <!--<img src="{{ STATIC_URL }}img/window2.jpg" />-->
   <div class="post_list">
     {% for object in object_list %}
     {% ifequal object.content_type.name "post" %}
@@ -22,6 +26,7 @@
     {% endifequal %}
     {% endfor %}
   </div>
+  {% block right_rail %}{% endblock %}
 
   {% if is_paginated %}
     {% include "blog/includes/pagination.html" %}
