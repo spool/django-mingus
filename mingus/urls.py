@@ -10,6 +10,7 @@ from mingus.core.views import springsteen_results, springsteen_firehose, \
                             proxy_search
 from robots.views import rules_list
 from mingus.core.feeds import AllEntries, ByTag
+from django.shortcuts import redirect
 
 admin.autodiscover()
 
@@ -77,6 +78,8 @@ urlpatterns += patterns('',
     #(r'', direct_to_template, {'template': 'home.html'}),
 
     (r'^blog/', include('basic.blog.urls')),
+
+    url(r'^tickets/$', 'mingus.core.views.tickets', name='tickets'),
 )
 
 
