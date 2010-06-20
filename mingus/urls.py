@@ -78,8 +78,8 @@ urlpatterns += patterns('',
     #(r'', direct_to_template, {'template': 'home.html'}),
 
     (r'^blog/', include('basic.blog.urls')),
+    (r'^photos/', include('basic.media.urls.photos')),
 
-    url(r'^tickets/$', 'mingus.core.views.tickets', name='tickets'),
 )
 
 

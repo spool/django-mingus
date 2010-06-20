@@ -18,10 +18,6 @@ from django.template import RequestContext
 import re
 from django.db.models import Q
 
-def tickets(request):
-    return redirect('http://www.edfringe.com/whats-on/theatre/wait-until-dark',
-            permanent=True)
-
 def page_key_prefix(request):
     '''Used by cache_page_with_prefix to create a cache key prefix.'''
     return request.GET.get('page','')

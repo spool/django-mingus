@@ -2,3 +2,20 @@
     background: url('/media/mingus/img/window.jpg') no-repeat scroll 550px -550px;
 }
 
+#header {
+    padding-bottom: 0px !important;
+}
+
+.navbar-one {
+    margin-top: 70px !important;
+}
+
+#nav ul li a {
+    font-size: 16pt !important;
+    font-weight: bold;
+    line-height: 12pt !important;
+}
+
+.search {
+    text-align: right;
+}
