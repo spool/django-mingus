@@ -79,6 +79,7 @@ urlpatterns += patterns('',
 
     (r'^blog/', include('basic.blog.urls')),
     (r'^photos/', include('basic.media.urls.photos')),
+    (r'^team/', include('thespians.urls')),
 
 )
 
