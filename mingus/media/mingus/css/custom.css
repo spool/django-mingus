@@ -32,6 +32,10 @@ img {
     float: left;
 }
 
+.profiles div{
+    clear: left;
+}
+
 ol.role {
     float: right;
 }
