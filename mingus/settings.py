@@ -95,6 +95,7 @@ INSTALLED_APPS = (
   'memcache_status',
   'request',
   'thespians',
+  'typogrify',
 )
 
 

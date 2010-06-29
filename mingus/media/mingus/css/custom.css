@@ -43,8 +43,17 @@ div.profiles {
     margin-right: 20px;
 }
 
-.role {
+dl.role {
     margin-left: 170px;
+}
+
+.profiles h3 a{
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.profiles dl.role {
+    margin-left: 10px;
 }
 
 .role .position {
