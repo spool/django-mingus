@@ -12,7 +12,7 @@
 
 .navbar-one {
     margin-left: 0px;
-    margin-right: 10px;
+    margin-right: 0px
     margin-top: 70px !important;
 }
 
@@ -20,6 +20,10 @@
     font-size: 16pt !important;
     font-weight: bold;
     line-height: 12pt !important;
+}
+
+ul.navbar-one li {
+    margin-right: 15px;
 }
 
 .search {
