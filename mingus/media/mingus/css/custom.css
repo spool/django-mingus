@@ -30,13 +30,34 @@ img {
 
 .profiles div.photo {
     float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
 
 div.profiles {
     clear: left;
 }
 
-ol.role {
-    float: right;
+.headshot {
+    float: left;
+    margin-right: 20px;
 }
+
+.role {
+    margin-left: 170px;
+}
+
+.role .position {
+    font-weight: bold;
+}
+
+.role .description {
+    font-style: italic;
+    padding-left: 20px;
+}
+
+.bio {
+    margin-top: 1em;
+}
+
 
