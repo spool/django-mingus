@@ -217,6 +217,21 @@
     {% block extra_body %}
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
         <script type="text/javascript" charset="utf-8">
+            $(document).ready(function() {
+                var list = [
+                    {% for redirect in redirects %}
+                    "{{ redirect.old_path }}", 
+                    {% endfor %}
+                    ];
+                for(var i = 0, l = list.length; i < l; i++) {
+                    $("a[href=" + list[i] + "]")
+                        .attr({ "target": "_blank" });
+                }
+                $("a[href^=http://]").not("[href^=http://waituntildarkfringe.com]")
+                    .attr({ "target": "_blank" });
+            });
+        </script>
+        <script type="text/javascript" charset="utf-8">
         jQuery(function($) {
             $.getScript('{{ STATIC_URL }}js/prettify.js', function(){
                 prettyPrint();
