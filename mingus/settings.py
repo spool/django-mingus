@@ -46,6 +46,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "basic.blog.context_processors.blog_settings",
     "navbar.context_processors.navbars",
     "staticfiles.context_processors.static_url",
+    "mingus.context_processors.redirects",
 )
 
 INSTALLED_APPS = (
