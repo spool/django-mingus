@@ -8,6 +8,7 @@
 {% block extra_head %}
 <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAAs28utdPrfmBuFv5kDtxoqhQEmXTy7t_3U-QjL987lkPlRABeSRSUvrn9S6PFW1Xb-uUEGsJCKqHHXw" type="text/javascript"></script>
 <script type="text/javascript">
     $(document).ready(function() {
         gmap_initialize(55.94676676092141, -3.1869256496429443, "Royal College of Surgeons");
@@ -46,7 +47,7 @@
     <dd>Royal College of Surgeons<br />Nicolson Street<br />Edinburgh<br />EH8 9DW</dd>
 </dl>
 
-<h3>{% trans "Contact Form." %}</h3>
+<h3>{% trans "Contact Form" %}</h3>
 
 <form method="POST" action=".">
 
