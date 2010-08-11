@@ -13,6 +13,11 @@ STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'media', 'mingus'),
 )
 
+MANAGERS = (
+    ('Director','director@waituntildarkfringe.com'),
+    ('Marketing','marketing@waituntildarkfringe.com'),
+)
+
 SITE_ID = 1
 ROOT_URLCONF = 'mingus.urls'
 TIME_ZONE = 'Europe/London'
