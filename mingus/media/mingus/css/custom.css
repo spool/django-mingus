@@ -75,4 +75,24 @@ dl.role {
     margin-top: 1em;
 }
 
+#map_canvas {
+    width: 460px;
+    heigh: 300px;
+}
 
+table.contact {
+    margin-top: 1em;
+}
+
+.contact .label {
+    font-weight: bold;
+    padding-left: 1em;
+}
+
+.contact .data {
+    padding-left: 3em;
+}
+
+h3 {
+    font-size: 1.35em;
+}
