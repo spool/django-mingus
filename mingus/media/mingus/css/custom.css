@@ -96,3 +96,13 @@ table.contact {
 h3 {
     font-size: 1.35em;
 }
+
+/* Twitter widget */
+div.twtr-hd {
+    display: none;
+}
+
+div.twtr-ft {
+    display: none;
+}
+
