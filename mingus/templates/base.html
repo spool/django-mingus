@@ -91,10 +91,10 @@
         <!-- /grid_9 -->
 
       {% block right_rail %}
-        {% include "twitter_widget.html" %}
       
-        {% comment %}
         <div id="right-rail" class="grid_7">
+        {% include "twitter_widget.html" %}
+        {% comment %}
 
           <h4>{% trans "About" %}</h4>
           <p>{{ BLOG_SETTINGS.about|safe }}</p>
@@ -193,9 +193,9 @@
           {% endcache %}
           <!--{% endcomment1 %}
 
-        </div>
-        <!-- /grid_6 -->
         {% endcomment %}
+        </div>
+        <!-- /grid_7 -->
       {% endblock right_rail %}
       </div>
       <!-- /container_16 -->
