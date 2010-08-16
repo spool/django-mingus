@@ -3,6 +3,33 @@
 new TWTR.Widget({
   version: 2,
   type: 'profile',
+  rpp: 4,
+  interval: 6000,
+  width: 250,
+  height: 300,
+  theme: {
+    shell: {
+      background: 'none',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: 'none',
+      color: '#ffffff',
+      links: '#75BF53',
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: true,
+    live: true,
+    hashtags: true,
+    timestamp: true,
+    avatars: true,
+    behavior: 'all'
+  }
+}).render().setUser('waittilldark').start();
+/*  version: 2,
+  type: 'profile',
   rpp: 1,
   interval: 6000,
   width: 400,
@@ -27,5 +54,5 @@ new TWTR.Widget({
     avatars: true,
     behavior: 'all'
   }
-}).render().setUser('waittilldark').start();
+}).render().setUser('waittilldark').start();*/
 </script>
