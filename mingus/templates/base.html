@@ -12,7 +12,7 @@
     <meta name="keywords" content="{{ BLOG_SETTINGS.meta_keywords }}">
     <meta name="description" content="{{ BLOG_SETTINGS.meta_description }}">
     <meta name="author" content="{{ BLOG_SETTINGS.author_name }}">
-    {% endblock %}
+    {% endblock meta %}
 
      <meta name="copyright" content="{{ BLOG_SETTINGS.copyright }}" />
      <link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico" type="image/x-icon"/>
@@ -23,7 +23,7 @@
     <link rel="alternate" type="application/rss+xml" title="{{ BLOG_SETTINGS.site_name }} all posts feed" href="/feeds/latest/">
 
   {% if category %}<link rel="alternate" type="application/rss+xml" title="{{ BLOG_SETTINGS.site_name }} - {{ category }} posts" href="/feeds/categories/{{ category.title|lower }}">{% endif %}
-    {% endblock %}
+    {% endblock rss %}
 
     {% compress css %}
     <link rel="stylesheet" href="{{ STATIC_URL }}css/960.css" type="text/css" media="all" charset="utf-8">
@@ -48,7 +48,7 @@
 
     {% disqus_dev %}
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-    {% block extra_head %}{% endblock %}
+    {% block extra_head %}{% endblock extra_head%}
   </head>
 
 <body id="{% block body_id %}{% endblock %}" class="{% block body_class %}blog{% endblock %}">
@@ -86,7 +86,7 @@
       <div class="container_16">
         <div class="grid_8 suffix_1">
           <div class="content">
-            {% block content %}{% endblock %}
+            {% block content %}{% endblock content %}
           </div>
           <!-- /content -->
 
@@ -203,7 +203,7 @@
       </div>
       <!-- /container_16 -->
 
-      {% endblock %}
+      {% endblock body%}
     </div>
     <!-- /body-container -->
 
