@@ -106,3 +106,14 @@ div.twtr-ft {
     display: none;
 }
 
+/* Meta header */
+#meta {
+    position: absolute;
+    top: 150px;
+    left: 945px;
+}
+
+#meta img{
+    border: none;
+    margin: 0 0 -2px 1px;
+}
