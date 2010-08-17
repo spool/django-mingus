@@ -66,6 +66,12 @@
     <!-- /logo -->
     {% endblock logo %}
 
+    {% block review %}
+        <a id="review" href="http://hairline.org.uk/2010/08/11/wait-until-dark/">
+            <img src="/media/mingus/img/hairline_stars.png" alt="4 Stars from Hairline.org.uk" />
+        </a>
+    {% endblock review %}
+
     {% block navhead %}
     <div id="nav">
       <form action="/search/" method="GET" class="search"><input type="text" name="q" value="{{ search_term }}"><input type="submit" class="button" value="{% trans "Search" %}"></form>
