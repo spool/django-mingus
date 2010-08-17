@@ -117,3 +117,14 @@ div.twtr-ft {
     border: none;
     margin: 0 0 -2px 1px;
 }
+
+/* Reveiw */
+#review {
+    position: absolute;
+    left: 610px;
+    margin-top: 4px;
+}
+
+#review img {
+    border: none;
+}
