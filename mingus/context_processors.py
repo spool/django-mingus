@@ -33,6 +33,3 @@ def redirects(request):
     cache.set("redirects", redirects)
 
     return {"redirects": redirects}
-
-
-
