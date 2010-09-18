@@ -14,8 +14,8 @@ STATICFILES_DIRS = (
 )
 
 MANAGERS = (
-    ('Director','director@waituntildarkfringe.com'),
-    ('Marketing','marketing@waituntildarkfringe.com'),
+    ('Director','director@adreamplay.com'),
+    ('Marketing','marketing@adreamplay.com'),
 )
 
 SITE_ID = 1
