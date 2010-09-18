@@ -1,7 +1,7 @@
 DATABASE_ENGINE = 'postgresql_psycopg2'
 DATABASE_NAME = 'dream_play'
 DATABASE_USER = 'dream_play'                   
-DATABASE_PASSWORD = 'h3!d!h00r@y'                   
+DATABASE_PASSWORD = ''                   
 DATABASE_HOST = ''                   
 DATABASE_PORT = ''
 
