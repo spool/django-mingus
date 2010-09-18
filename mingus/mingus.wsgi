@@ -1,6 +1,6 @@
 import site
 from django.conf import settings
-site.addsitedir('/home/django/domains/%s/%s/lib/python2.6/site-packages' % settings.DOMAIN_NAME)
+site.addsitedir('/home/django/domains/adreamplay.com/adreamplay.com/lib/python2.6/site-packages')
 
 import os
 import sys
