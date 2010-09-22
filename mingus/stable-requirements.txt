@@ -1,4 +1,4 @@
-BeautifulSoup==3.0.8.1
+BeautifulSoup>=3.0.8
 PIL
 psycopg2
 python-memcached
