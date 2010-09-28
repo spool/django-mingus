@@ -10,3 +10,4 @@ django_mingus.egg-info
 mingus/media/CACHE/
 .*.swp
 .*.swo
+mingus/thespians
