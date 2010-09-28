@@ -54,8 +54,8 @@
 <body id="{% block body_id %}{% endblock %}" class="{% block body_class %}blog{% endblock %}">
 <div id="bleeder"></div>
 
+  {% block body %}
   <div id="body-container" class="clearfix">
-    {% block body %}
 
   {% block header %}
   <div id="header" class="clearfix">
@@ -85,6 +85,8 @@
   </div>
   <!-- /header -->
   {% endblock header %}
+
+  {% block columns %}
 
       <div class="container_16">
         <div class="grid_8 suffix_1">
@@ -205,10 +207,11 @@
       {% endblock right_rail %}
       </div>
       <!-- /container_16 -->
+      {% endblock columns %}
 
-      {% endblock body%}
     </div>
     <!-- /body-container -->
+  {% endblock body%}
 
     <div id="footer">
       <p>

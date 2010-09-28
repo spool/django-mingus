@@ -1,5 +1,23 @@
+body {
+    background: url('/media/mingus/img/star-space-tile.jpg');
+}
+
+/* Un-comment for the launch...
 #body-container {
-    background: url('/media/mingus/img/window.jpg') no-repeat scroll 550px -550px;
+    background: url('/media/mingus/img/pages.png') no-repeat top right;
+}
+*/
+
+#book-container {
+    margin: 70px auto;
+    width: 650px;
+}
+
+#book {
+   border: none;
+} 
+
+.content {
 }
 
 #header {

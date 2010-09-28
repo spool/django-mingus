@@ -5,10 +5,9 @@
 
 {% block content_title %}{% endblock %}
 
-{% comment %}
 {% block header %}{% endblock %}
-{% endcomment %}
 
+{% comment %}
 {% block content %}
   <div class="post_list">
     {% for object in object_list %}
@@ -27,4 +26,10 @@
   {% if is_paginated %}
     {% include "blog/includes/pagination.html" %}
   {% endif %}
-{% endblock %}
+{% endcomment %}
+
+{% block body %}
+<div id="book-container">
+    <img id="book" alt="A Dream Play at the Oxford Playhouse" src="/media/mingus/img/book_cover.png" />
+</div>
+{% endblock body %}
