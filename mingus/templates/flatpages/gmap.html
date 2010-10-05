@@ -1,0 +1,45 @@
+{% extends "blog/base_blog.html" %}
+
+{% block title %}{{ flatpage.title }} | {{ block.super }}{% endblock %}
+
+{% block extra_head %}
+<meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        gmap_initialize(57.75475, -1.26066, "Oxford Playhouse");
+    });
+
+    function gmap_initialize(lon, lat, label) {
+        var coordinates = new google.maps.LatLng(lon, lat);
+        var settings = {
+            zoom: 15,
+            center: coordinates,
+            mapTypeControl: true,
+            mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+            navigationControl: true,
+            navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas"), settings);
+        var venueMarker = new google.maps.Marker({
+            position: coordinates,
+            map: map,
+            title: label,
+            });
+    }
+</script>
+{% endblock %}
+
+{% block body_class %}{{ block.super }} flatpage{% endblock %}
+{% block body_id %}flatpage_{{ flatpage.id }}{% endblock %}
+
+{% block content %}
+  <div class="post clearfix">
+    <h2>{{ flatpage.title }}</h2>
+      <div class="body">
+      {{ flatpage.content|safe }}
+      </div>
+  </div>
+{% endblock %}

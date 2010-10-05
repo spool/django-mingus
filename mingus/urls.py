@@ -51,6 +51,26 @@ urlpatterns += patterns('',
     (r'^api/springsteen/firehose/$', springsteen_firehose),
     (r'^api/springsteen/category/(?P<slug>[-\w]+)/$', springsteen_category),
 
+    url(r'^tickets/$',
+        direct_to_template,
+        { 'template': 'tickets.html' },
+        name='tickets'),
+
+    url(r'^about/$',
+        direct_to_template,
+        { 'template': 'about.html' },
+        name='about'),
+
+    url(r'^recruitment/$',
+        direct_to_template,
+        { 'template': 'recruitment.html' },
+        name='recruitment'),
+
+    url(r'^gallery/$',
+        direct_to_template,
+        { 'template': 'gallery.html' },
+        name='gallery'),
+
     url(r'^contact/$',
         contact_form,
         name='contact_form'),

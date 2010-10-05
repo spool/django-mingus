@@ -30,7 +30,6 @@
     <link rel="stylesheet" href="{{ STATIC_URL }}css/prettify.css" type="text/css" media="all" charset="utf-8">
     <link rel="stylesheet" href="{{ STATIC_URL }}css/pygments.css" type="text/css" media="all" charset="utf-8">
     <link rel="stylesheet" href="{{ STATIC_URL }}css/base.css" type="text/css" media="all" charset="utf-8">
-    <link rel="stylesheet" href="{{ STATIC_URL }}css/themes/dark.css" type="text/css" media="all" charset="utf-8">
     <link rel="stylesheet" href="{{ STATIC_URL }}css/custom.css" type="text/css" media="all" charset="utf-8">
    {% endcompress %}
 
@@ -52,16 +51,14 @@
   </head>
 
 <body id="{% block body_id %}{% endblock %}" class="{% block body_class %}blog{% endblock %}">
-<div id="bleeder"></div>
 
   {% block body %}
-  <div id="body-container" class="clearfix">
 
   {% block header %}
-  <div id="header" class="clearfix">
+  <div id="header">
     {% block logo %}
     <div id="logo">
-        <h1><a href="/" title="{{ BLOG_SETTINGS.site_name }}"><img src="/media/mingus/img/banner.png" alt="{{ BLOG_SETTINGS.site_name }}" /></a></h1>
+        <h1><a href="/" title="{{ BLOG_SETTINGS.site_name }}"><img src="/media/mingus/img/logo.png" alt="{{ BLOG_SETTINGS.site_name }}" /></a></h1>
     </div>
     <!-- /logo -->
     {% endblock logo %}
@@ -77,30 +74,30 @@
       {% endcache %}
     </div>
     <!-- /nav -->
+    <!-- Old Meta
     <p id="meta">
       <a title="Venue and Contact Information" href="/contact/">contact</a> | <a title="RSS Feed" href="/feeds/all/"><img src="/media/mingus/img/feed-icon.png" alt="RSS Feed" /></a>
-    </p>
+      </p>--!>
     {% endblock navhead %}
 
   </div>
   <!-- /header -->
   {% endblock header %}
 
-  {% block columns %}
+  <div id="container" class="container_12">
 
-      <div class="container_16">
-        <div class="grid_8 suffix_1">
-          <div class="content">
-            {% block content %}{% endblock content %}
+  {% block grid %}
+          <div id="content" class="prefix_1 grid_10 suffix_1">
+        {% block content %}{% endblock content %}
           </div>
           <!-- /content -->
 
-        </div>
         <!-- /grid_9 -->
 
+      {% comment %}
       {% block right_rail %}
       
-        <div id="right-rail" class="grid_7">
+        <div id="right-rail" >
         {% include "twitter_widget.html" %}
         {% comment %}
 
@@ -199,26 +196,27 @@
           </ul>
           {% endif %}
           {% endcache %}
-          <!--{% endcomment1 %}
+          <!--
 
-        {% endcomment %}
         </div>
         <!-- /grid_7 -->
       {% endblock right_rail %}
+      
       </div>
       <!-- /container_16 -->
       {% endblock columns %}
+      {% endcomment %}
+      <p id="fixlength">&nbsp;</p>
+  {% endblock grid %}
+  </div>
 
-    </div>
     <!-- /body-container -->
   {% endblock body%}
 
     <div id="footer">
-      <p>
-        {% cache 3600 "base.footer" %}
-        {% flatblock "footer" 3600 "flatblocks/bare.html" %}
-        {% endcache %}
-      </p>
+       <div id="copywrite">
+         <p>&copy; BlindSpot Productions 2010. All rights reserved. Design by Griffith Rees</p>
+       </div>
     </div>
     <!-- /footer -->
 
