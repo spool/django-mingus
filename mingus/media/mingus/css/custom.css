@@ -17,7 +17,7 @@
 
 body {
     background: url('/media/mingus/img/nebula_tile.jpg');
-    font-family: 'OldStyle1HPLHS';
+    font-family: 'OldStyle1HPLHS', 'Georgia', 'Times New Roman', Times, serif;
     color: #222;
     font-size: 16pt;
 }

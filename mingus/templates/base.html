@@ -68,8 +68,8 @@
 
     {% block navhead %}
     <div id="nav">
-      <form action="/search/" method="GET" class="search"><input type="text" name="q" value="{{ search_term }}"><input type="submit" class="button" value="{% trans "Search" %}"></form>
-      {% cache 60 "base.navbars" %}
+        <!--<form action="/search/" method="GET" class="search"><input type="text" name="q" value="{{ search_term }}"><input type="submit" class="button" value="{% trans "Search" %}"></form>-->
+      {% cache 1 "base.navbars" %}
       {% navbars %}
       {% endcache %}
     </div>
