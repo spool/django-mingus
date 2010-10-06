@@ -85,7 +85,8 @@ urlpatterns += patterns('',
         name='home_paginated'),
 
     url(r'^$',
-        view=home_list,
+        direct_to_template,
+        { 'template': 'about.html' },
         name='home_index'),
 
     url(r'^tags/(?P<slug>[-\w]+)/$', 'mingus.core.views.tag_detail',

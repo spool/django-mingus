@@ -80,6 +80,10 @@ form.search {
     display: none;
 }
 
+.blog #footer{
+    display: none;
+}
+
 #footer {
     background: url('/media/mingus/img/footer.png') no-repeat;
     width: 838px;
