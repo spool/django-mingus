@@ -66,6 +66,11 @@ urlpatterns += patterns('',
         { 'template': 'recruitment.html' },
         name='recruitment'),
 
+    url(r'^auditions/$',
+        direct_to_template,
+        { 'template': 'recruitment.html' },
+        name='auditions'),
+
     url(r'^gallery/$',
         direct_to_template,
         { 'template': 'gallery.html' },
