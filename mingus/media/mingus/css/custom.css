@@ -1,7 +1,10 @@
 @font-face {
 	font-family: 'TheanoOldStyleRegular';
 	src: url('/media/mingus/fonts/TheanoOldStyle-Regular-webfont.eot');
-	src: local('☺'), url('/media/mingus/fonts/TheanoOldStyle-Regular-webfont.woff') format('woff'), url('/media/mingus/fonts/TheanoOldStyle-Regular-webfont.ttf') format('truetype'), url('/media/mingus/fonts/TheanoOldStyle-Regular-webfont.svg#webfont26XueRs0') format('svg');
+	src: local('☺'),
+         url('/media/mingus/fonts/TheanoOldStyle-Regular-webfont.woff') format('woff'),
+         url('/media/mingus/fonts/TheanoOldStyle-Regular-webfont.ttf') format('truetype'),
+         url('/media/mingus/fonts/TheanoOldStyle-Regular-webfont.svg#webfont26XueRs0') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -9,7 +12,10 @@
 @font-face {
 	font-family: 'OldStyle1HPLHS';
 	src: url('/media/mingus/fonts/oldsh___-webfont.eot');
-	src: local('☺'), url('/media/mingus/fonts/oldsh___-webfont.woff') format('woff'), url('/media/mingus/fonts/oldsh___-webfont.ttf') format('truetype'), url('/media/mingus/fonts/oldsh___-webfont.svg#webfontYD8HJyPc') format('svg');
+	src: local('☺'),
+         url('/media/mingus/fonts/oldsh___-webfont.woff') format('woff'),
+         url('/media/mingus/fonts/oldsh___-webfont.ttf') format('truetype'),
+         url('/media/mingus/fonts/oldsh___-webfont.svg#webfontYD8HJyPc') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
