@@ -68,7 +68,8 @@
 
     {% block navhead %}
     <div id="nav">
-        <!--<form action="/search/" method="GET" class="search"><input type="text" name="q" value="{{ search_term }}"><input type="submit" class="button" value="{% trans "Search" %}"></form>-->
+        <!--
+        <form action="/search/" method="GET" class="search"><input type="text" name="q" value="{{ search_term }}"><input type="submit" class="button" value="{% trans "Search" %}"></form> -->
       {% cache 1 "base.navbars" %}
       {% navbars %}
       {% endcache %}
@@ -77,7 +78,8 @@
     <!-- Old Meta
     <p id="meta">
       <a title="Venue and Contact Information" href="/contact/">contact</a> | <a title="RSS Feed" href="/feeds/all/"><img src="/media/mingus/img/feed-icon.png" alt="RSS Feed" /></a>
-      </p>--!>
+      </p>
+      --!>
     {% endblock navhead %}
 
   </div>
