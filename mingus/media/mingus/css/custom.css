@@ -90,6 +90,22 @@ form.search {
     display: none;
 }
 
+/* Depressing trick to fix IE hr background problems */
+div.hr hr {
+    width: 60%;
+    color: #800000;
+    padding-top: 2em;
+    display: none;
+}
+
+div.hr {
+    background: url('/media/mingus/img/filigree_footer.png') no-repeat scroll center;
+    height: 40px;
+    top: 27px;
+    position: relative;
+}
+
+
 #footer {
     background: url('/media/mingus/img/footer.png') no-repeat;
     width: 838px;
@@ -122,9 +138,12 @@ form.search {
 }
 
 #nav li.selected a {
-    background: url('/media/mingus/img/filigree_nav.png') no-repeat 0 2em;
     color: #800000;
     font-weight: bold;
+}
+
+#nav li.selected a, #nav li a:hover {
+    background: url('/media/mingus/img/filigree_nav.png') no-repeat center 1.2em;
 }
 
 #nav ul li a {
@@ -132,6 +151,7 @@ form.search {
     line-height: 32pt !important;
     color: #222;
     margin-bottom: .5em;
+    padding-bottom: .5em;
 }
 
 #nav {
