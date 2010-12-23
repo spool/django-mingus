@@ -102,6 +102,7 @@ INSTALLED_APPS = (
   'request',
   'thespians',
   'typogrify',
+  'gunicorn',
 )
 
 
