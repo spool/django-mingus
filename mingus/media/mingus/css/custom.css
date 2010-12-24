@@ -217,17 +217,48 @@ dl.role {
 }
 
 #map_canvas {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 250px;
 }
 
-table.contact {
-    float: left;
+.contact a {
+    text-decoration: none;
+    color: #800000;
+}
+
+.performances table {
+    margin-top: 1.5em;
+}
+
+.performances th {
+    font-weight: bold;
+    padding-left: 1em;
+    text-align: left;
+}
+
+.performances tr {
+    border-bottom: 1px solid #222;
+}
+
+.performances tr.last {
+    border: none;
+}
+
+.performances td {
+    padding-left: 1em;
+}
+
+th.date{
+    width: 100px;
+}
+
+div.contact {
+    padding-left: 1em;
 }
 
 .contact .label {
     font-weight: bold;
-    padding-left: 1em;
+    width: 100px;
 }
 
 .contact .data {

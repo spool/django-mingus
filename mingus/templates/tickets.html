@@ -35,23 +35,52 @@
 
 {% block content %}
 <h3>Tickets</h3>
-<p>Tickets will be sold from the Oxford Playhouse box office and <a href="http://www.oxfordplayhouse.com">website</a> once the programme for the coming season is published. Performances will be in late January or early February. At this time please direct any further questions to the box office.
-</p>
-<h3>Oxford Playhouse</h3>
-<table class="contact grid_5">
+<p>Tickets are on sale from the Oxford Playhouse box office and <a href="http://www.oxfordplayhouse.com/show/?eventid=1725">website</a>.</p>
+<div id="map_canvas" class="grid_3 suffix_1"></div>
+<div class="contact grid_5 ">
+    <h3><a href="http://www.oxfordplayhouse.com/show/?eventid=1725">Oxford Playhouse</a></h3>
+    <table>
+        <tr>
+            <td class="label">Telephone</td>
+            <td class="data">01865305300</td>
+        </tr>
+        <tr>
+            <td class="label">Address</td>
+            <td class="data">Oxford Playhouse<br />Beaumont Street<br />Oxford OX1 2LW</td>
+        </tr>
+    </table>
+</div>
+<div class="grid_10 performances">
+<table>
     <tr>
-        <td class="label">Prices</td>
-        <td class="data">£14.50/£11.50/£9.50</td>
+        <th class="date">Date</th>
+        <th class="time">Times</th>
+        <th class="price">Prices</th>
+        <th class="events">Events</th>
     </tr>
     <tr>
-        <td class="label">Telephone</td>
-        <td class="data">01865305300</td>
+        <td class="date">Wed 17/2</td>
+        <td class="time">19:30</td>
+        <td class="price">£9.50 | £11.50 | £14.50</td>
+        <td class="events">Post-Show Talk</td>
     </tr>
     <tr>
-        <td class="label">Address</td>
-        <td class="data">Oxford Playhouse<br />Beaumont Street<br />Oxford OX1 2LW</td>
+        <td class="date">Thu 17/3</td>
+        <td class="time">14:30<br />19:30</td>
+        <td class="price">£9.50 | £11.50 | £14.50</td>
+    </tr>
+    <tr>
+        <td class="date">Fri 17/4</td>
+        <td class="time">20:00</td>
+        <td class="price">£9.50 | £11.50 | £14.50</td>
+        <td class="events">Pre-Show Talk</td>
+    </tr>
+    <tr class="last">
+        <td class="date">Sat 17/5</td>
+        <td class="time">14:30<br />19:30</td>
+        <td class="price">£9.50 | £11.50 | £14.50</td>
     </tr>
 </table>
-<div id="map_canvas" class="grid_5"></div>
+</div>
 {% endblock content %}
 
