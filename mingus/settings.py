@@ -18,7 +18,7 @@ MANAGERS = (
     ('Marketing','marketing@adreamplay.com'),
 )
 
-SITE_ID = 1
+SITE_ID = 2
 ROOT_URLCONF = 'mingus.urls'
 TIME_ZONE = 'Europe/London'
 SECRET_KEY = '+bq@o(jph^-*sfj4j%xukecxb0jae9lci&ysy=609hj@(l$47c'
@@ -35,12 +35,12 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.middleware.doc.XViewMiddleware',
     'django.contrib.redirects.middleware.RedirectFallbackMiddleware',
-    'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
     'slimmer.middleware.CompressHtmlMiddleware',
     'sugar.middleware.debugging.UserBasedExceptionMiddleware',
     'request.middleware.RequestMiddleware',
     'djangodblog.DBLogMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',
+    'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
