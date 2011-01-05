@@ -86,10 +86,6 @@ form.search {
     display: none;
 }
 
-.blog #footer{
-    display: none;
-}
-
 /* Depressing trick to fix IE hr background problems */
 div.hr hr {
     width: 60%;
