@@ -33,7 +33,7 @@ a:link, a:visited {
     text-decoration: underline;
 }
 
-a:link {
+a:link, strong {
     color: #800000;
 }
 
