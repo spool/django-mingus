@@ -227,9 +227,11 @@
     <!-- /footer -->
 
     <!-- google analtyics -->
-    {% cache 7200 "base.analytics" %}
-    {% analytics %}
-    {% endcache %}
+        {% comment %}
+        {% cache 7200 "base.analytics" %}
+        {% analytics %}
+        {% endcache %}
+        {% endcomment %}
     {% block extra_body %}
         <script type="text/javascript" charset="utf-8">
             $(document).ready(function() {
