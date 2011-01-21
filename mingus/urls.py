@@ -55,6 +55,11 @@ urlpatterns += patterns('',
         direct_to_template,
         { 'template': 'tickets.html' },
         name='tickets'),
+    
+    url(r'^trailers/$',
+        direct_to_template,
+        { 'template': 'trailers.html' },
+        name='trailers'),
 
     url(r'^about/$',
         direct_to_template,
@@ -91,7 +96,7 @@ urlpatterns += patterns('',
 
     url(r'^$',
         direct_to_template,
-        { 'template': 'about.html' },
+        { 'template': 'home.html' },
         name='home_index'),
 
     url(r'^tags/(?P<slug>[-\w]+)/$', 'mingus.core.views.tag_detail',
@@ -106,6 +111,7 @@ urlpatterns += patterns('',
     (r'^blog/', include('basic.blog.urls')),
     (r'^photos/', include('basic.media.urls.photos')),
     (r'^team/', include('thespians.urls')),
+    (r'^sponsors/', include('sponsors.urls')),
 
 )
 
