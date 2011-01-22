@@ -96,7 +96,7 @@ urlpatterns += patterns('',
 
     url(r'^$',
         direct_to_template,
-        { 'template': 'home.html' },
+        { 'template': 'about.html' },
         name='home_index'),
 
     url(r'^tags/(?P<slug>[-\w]+)/$', 'mingus.core.views.tag_detail',
