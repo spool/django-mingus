@@ -20,6 +20,19 @@
 	font-style: normal;
 }
 
+li.twittLI {
+    border-bottom: 1px dotted;
+    margin-bottom: .5em;
+    padding-bottom: .5em;
+    min-height: 52px;
+    clear: both;
+}
+
+img.juitterAvatar {
+    float: left;
+    margin: 0 .5em .5em 0;
+}
+
 
 body {
     background: url('/media/mingus/img/nebula_tile.jpg');
@@ -305,3 +318,19 @@ div.twtr-ft {
     font-size: 1.5em;
     margin-top: 1em;
 }
+
+/* twitter */
+
+#twitter {
+    font-size: .5em;
+}
+
+/* Sponsor stuff */
+
+.sponsor-list img {
+    float: left;
+    border: none;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
