@@ -332,6 +332,8 @@ div.twtr-ft {
     border: none;
     margin-right: 20px;
     margin-bottom: 20px;
-    clear: both;
 }
 
+.sponsor-list li {
+    clear: left;
+}
