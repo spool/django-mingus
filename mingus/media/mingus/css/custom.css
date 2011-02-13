@@ -328,13 +328,10 @@ div.twtr-ft {
 /* Sponsor stuff */
 
 .sponsor-list img {
-    float: right;
+    float: left;
     border: none;
     margin-right: 20px;
     margin-bottom: 20px;
-}
-.sponsor-list h3 {
     clear: both;
-    float: left;
 }
 
