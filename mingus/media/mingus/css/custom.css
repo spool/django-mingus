@@ -156,11 +156,11 @@ div.hr {
 }
 
 #nav ul li a {
-    font-size: 19pt !important;
-    line-height: 32pt !important;
+    font-size: 15pt !important;
+    line-height: 20pt !important;
     color: #222;
-    margin-bottom: .5em;
-    padding-bottom: .5em;
+    margin-bottom: .2em;
+    padding-bottom: .6em;
     text-shadow: #fff 0px 0px 10px;
 }
 
@@ -174,7 +174,7 @@ div.hr {
 
 
 ul.navbar-one li {
-    margin-right: 33px;
+    margin-right: 30px;
 }
 
 .search {
